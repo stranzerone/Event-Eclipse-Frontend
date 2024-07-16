@@ -9,6 +9,9 @@ import Registration from './components/authentication/Registration';
 import Chat from "./components/Chat";
 import History from "./components/History";
 import './components/css/Star.css'
+import  AddVenue  from './components/Venue/AddVenue';
+import { AllVenue } from './components/Venue/AllVenue';
+import { VenueDetails } from './components/Venue/VenueBooking/MainBookPage';
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
         <Route path="/register" element={<Registration />} />
         <Route path="/chat" exact element={<Chat />} />
         <Route path="/history" exact element={<History />} />
+        <Route path='/addVenue' exact element={<AddVenue />} /> 
+        <Route path='/allVenues' exact element={<AllVenue />} />  
+        <Route path='/VenueDetails' exact element={<VenueDetails />} />   
       </Routes>
     </Router>
   );

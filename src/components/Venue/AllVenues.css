@@ -1,0 +1,68 @@
+.allVenuesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .venueCard {
+    display: flex;
+    background-color: #e9e391; /* Light red background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 40vh;
+    margin: 15px;
+    width: 99vw;
+    overflow: hidden;
+    transition: transform 0.2s;
+    padding: 10px;
+  }
+  
+  .venueCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .venueImage {
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: aqua;
+
+  }
+  
+  .venueDetails {
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+   
+  padding-left: 10px;
+  font-weight: 700;
+  
+  }
+  
+  .venueName {
+    font-size: 2rem;
+    font-weight: 800;
+
+    color: #d85a5a; /* Dark red color */
+    margin: 0;
+  }
+  
+  .venueLocation,
+  .venueCapacity,
+  .venueDescription {
+  display: flex;
+  gap: 10px;
+    font-size: 1em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+ .venueDetails span{
+
+font-size: 1.3rem;
+  }
